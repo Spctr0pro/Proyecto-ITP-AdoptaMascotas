@@ -1,0 +1,5 @@
+2024-10-11 19:55:35 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
+2024-10-11 19:56:46 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
+2024-10-11 19:57:02 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
+2024-10-11 19:58:36 [[31merror[39m]: _id Cast to ObjectId failed for value "clearPets" (type string) at path "_id" for model "Pets"
+2024-10-11 19:59:26 [[31merror[39m]: undefined this.petService.deleteAllPet is not a function

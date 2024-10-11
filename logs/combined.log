@@ -1,0 +1,47 @@
+2024-10-11 19:46:25 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:55:32 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:55:35 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
+2024-10-11 19:56:45 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:56:46 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
+2024-10-11 19:57:00 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:57:02 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
+2024-10-11 19:58:00 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:58:07 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:58:32 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:58:36 [[31merror[39m]: _id Cast to ObjectId failed for value "clearPets" (type string) at path "_id" for model "Pets"
+2024-10-11 19:59:23 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:59:26 [[31merror[39m]: undefined this.petService.deleteAllPet is not a function
+2024-10-11 19:59:55 [[32minfo[39m]: Listening on 8080
+2024-10-11 19:59:58 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:02 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:08 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:11 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:15 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:33 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:37 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:39 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:43 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:52 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:55 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:00:58 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:01:36 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:01:39 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:01:43 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:01:46 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:01:49 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:01:55 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:07 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:08 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:14 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:20 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:26 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:28 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:02:36 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:11 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:13 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:15 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:17 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:24 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:27 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:03:29 [[32minfo[39m]: Listening on 8080
+2024-10-11 20:04:04 [[32minfo[39m]: Listening on 8080
