@@ -33,9 +33,7 @@ export class PetServices {
     return "ok";
   }
 
-  async removeAll() {
-    console.log("entro");
-    
+  async removeAll() {   
     await this.petDao.deleteAll();
     return "ok";
   }

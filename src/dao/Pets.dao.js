@@ -27,8 +27,6 @@ export default class Pet {
     }
 
     deleteAll = () =>{
-        console.log("entroDao");
-        
         return petModel.deleteMany({});
     }
 }

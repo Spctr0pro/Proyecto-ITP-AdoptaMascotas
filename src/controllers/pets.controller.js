@@ -51,9 +51,7 @@ export class PetsController {
   };
 
   deleteAllPet = async (req, res, next) => {
-    try {
-      console.log("entroController");
-      
+    try {     
       const result = await this.petService.removeAll();
       res.send({ status: "success", message: "pets deleted" });
     } catch (error) {
