@@ -1,0 +1,28 @@
+paths:
+  /api/adoptions/{aid}:
+    put:
+      summary: Actualizar adoción
+      description: Update a adoption
+      tags:
+        - Adoptions
+      parameters:
+        - in: path
+          name: aid
+          required: true
+          description: Id de la adopción
+          schema:
+            type: string
+      requestBody:
+        required: true
+        description: Adoption data
+        content:
+            application/json:
+              schema:
+                $ref: "#/components/requestBody/adoptionBody"
+      responses:
+        200:
+          description: Update adoption
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Adoptions"

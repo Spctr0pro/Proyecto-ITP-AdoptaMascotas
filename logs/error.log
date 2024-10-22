@@ -3,3 +3,41 @@
 2024-10-11 19:57:02 [[31merror[39m]: _id Cast to ObjectId failed for value "deleteAll" (type string) at path "_id" for model "Pets"
 2024-10-11 19:58:36 [[31merror[39m]: _id Cast to ObjectId failed for value "clearPets" (type string) at path "_id" for model "Pets"
 2024-10-11 19:59:26 [[31merror[39m]: undefined this.petService.deleteAllPet is not a function
+2024-10-21 18:23:14 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "27-09-2010" (type string) at path "birthDate"
+2024-10-21 18:24:31 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "27-09-2010" (type string) at path "birthDate"
+2024-10-21 20:27:00 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:31:10 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:32:06 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:32:50 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:34:14 [[31merror[39m]: undefined this.usersService.getUserById is not a function
+2024-10-21 20:34:42 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:35:22 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:36:16 [[31merror[39m]: undefined this.userDao.getById is not a function
+2024-10-21 20:37:07 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:37:57 [[31merror[39m]: undefined ObjectId is not defined
+2024-10-21 20:41:05 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:41:51 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:42:17 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:43:12 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:44:10 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:44:59 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:47:53 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:48:49 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:50:21 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:50:38 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:51:20 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:51:42 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:52:04 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:52:40 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:54:54 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getById')
+2024-10-21 20:55:15 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getById')
+2024-10-21 20:55:48 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getById')
+2024-10-21 20:57:26 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716c6c33e10f04ffcc6e393" (type string)
+2024-10-21 21:00:30 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 21:18:45 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716ea990e23ceb9d544c163" (type string)
+2024-10-21 21:18:52 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716ea990e23ceb9d544c163" (type string)
+2024-10-21 21:19:16 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716ea990e23ceb9d544c163" (type string)
+2024-10-21 21:19:38 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:21:45 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:22:06 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:22:38 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')

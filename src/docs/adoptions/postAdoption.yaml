@@ -1,0 +1,27 @@
+paths:
+  /api/adoptions/uid/pid:
+    post:
+      summary: Crear una adopción
+      description: Create a adoption
+      tags:
+        - Adoptions
+      parameters:
+        - in: path
+          name: uid
+          required: true
+          description: Id del usuario
+          schema:
+            type: string
+        - in: path
+          name: pid
+          required: true
+          description: Id de la mascota
+          schema:
+            type: string
+      responses:
+        201:
+          description: New adoption
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Adoptions"

@@ -6,13 +6,16 @@ import router from "./routes/index.js";
 
 import { errorHandle } from "./errors/errHandle.js";
 import { logger } from "./utils/logger.js";
+import swaggerUiExpress from "swagger-ui-express";
+import { specs } from "./config/swagger.config.js";
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const connection = mongoose.connect(`mongodb+srv://#USER#:#PASSWORD#@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
+const connection = mongoose.connect(`mongodb+srv://ivantorop:gO3HOAs3EmMmHj1V@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
 
 app.use(express.json());
 app.use(cookieParser());
+app.use("/api-docs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs))
 
 app.use("/api", router);
 

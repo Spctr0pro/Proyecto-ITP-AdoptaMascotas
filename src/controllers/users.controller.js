@@ -7,6 +7,12 @@ export class UserControllers {
     this.userServices = new UserServices();
   }
 
+  create = async (req, res) => {
+    const users = await this.userServices.create(req.body);
+
+    res.status(201).json({ status: "ok", users });
+  };
+
   createUserMock = async (req, res) => {
     const users = await this.userServices.createMocks();
 

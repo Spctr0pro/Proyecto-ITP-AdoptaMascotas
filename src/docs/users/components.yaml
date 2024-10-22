@@ -1,0 +1,64 @@
+components:
+  schemas:
+    Users:
+      type: array
+      item:
+        properties:
+          _id: 
+            type: ObjectId
+            description: Id del usuario
+          first_name:
+            type: string
+            description: Nombre de Usuario
+          last_name:
+            type: string
+            description: Apellido de Usuario
+          email: 
+            type: string
+            description: Email del usuario
+          password:
+            type: string
+            description: Password del usuario
+          role:
+            type: string
+            description: Rol del usuario
+          pets:
+            type: Array[ObjectId]
+            description: Mascotas del usuario
+      example:
+        _id: 5f7e9f9b5f7e9f9b5f7e9f9b
+        first_name: Iván
+        last_name: Toro
+        email: itoro@coder.cl 
+        password: coder123
+        role: User
+        pets: []
+  requestBody:
+    userBody:
+      type: object
+      properties:
+          first_name:
+            type: string
+            description: Nombre de Usuario
+          last_name:
+            type: string
+            description: Apellido de Usuario
+          email: 
+            type: string
+            description: Email del usuario
+          password:
+            type: string
+            description: Password del usuario
+          role:
+            type: string
+            description: Rol del usuario
+          pets:
+            type: Array[ObjectId]
+            description: Mascotas del usuario
+      example:
+        first_name: Iván
+        last_name: Toro
+        email: itoro@coder.cl 
+        password: coder123
+        role: User
+        pets: []

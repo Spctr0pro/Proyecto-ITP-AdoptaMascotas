@@ -1,0 +1,32 @@
+components:
+  schemas:
+    Adoptions:
+      type: array
+      item:
+        properties:
+          _id: 
+            type: ObjectId
+            description: Id de la adopción
+          owner:
+            type: ObjectId
+            description: Id del usuario
+          pet:
+            type: ObjectId
+            description: Id de la mascota
+      example:
+        _id: 5f7e9f9b5f7e9f9b5f7e9f9b
+        name: 5f7e9f9b5f7e9f9b5f7e9f9b
+        specie: 5f7e9f9b5f7e9f9b5f7e9f9b
+  requestBody:
+    adoptionBody:
+      type: object
+      properties:
+        owner:
+          type: string
+          description: Id del usuario
+        pet:
+          type: string
+          description: Id de la mascota
+      example:
+        owner: 5f7e9f9b5f7e9f9b5f7e9f9b
+        pet: 5f7e9f9b5f7e9f9b5f7e9f9b

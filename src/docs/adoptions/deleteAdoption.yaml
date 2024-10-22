@@ -1,0 +1,17 @@
+paths:
+  /api/adoptions/{aid}:
+    delete:
+      summary: Eliminar adopción
+      description: Delete a adoption
+      tags:
+        - Adoptions
+      parameters:
+        - in: path
+          name: aid
+          required: true
+          description: Id de la adopción
+          schema:
+            type: string
+      responses:
+        200:
+          description: Delete adoption

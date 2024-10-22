@@ -45,3 +45,173 @@
 2024-10-11 20:03:27 [[32minfo[39m]: Listening on 8080
 2024-10-11 20:03:29 [[32minfo[39m]: Listening on 8080
 2024-10-11 20:04:04 [[32minfo[39m]: Listening on 8080
+2024-10-21 17:53:30 [[32minfo[39m]: Listening on 8080
+2024-10-21 17:53:33 [[32minfo[39m]: Listening on 8080
+2024-10-21 17:53:44 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:09:27 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:15:36 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:19:34 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:21:13 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:23:14 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "27-09-2010" (type string) at path "birthDate"
+2024-10-21 18:23:16 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:24:31 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "27-09-2010" (type string) at path "birthDate"
+2024-10-21 18:25:14 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:46:14 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:47:01 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:53:05 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:54:32 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:55:53 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:56:37 [[32minfo[39m]: Listening on 8080
+2024-10-21 18:59:03 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:05:38 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:10:42 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:11:26 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:11:28 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:11:42 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:11:44 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:11:57 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:11:58 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:16:12 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:18:31 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:32:49 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:35:35 [[32minfo[39m]: Listening on 8080
+2024-10-21 19:36:53 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:24:49 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:24:51 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:27:00 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:27:01 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:27:37 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:27:39 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:30:40 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:31:10 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:32:03 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:32:05 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:32:06 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:32:50 [[31merror[39m]: undefined usersService is not defined
+2024-10-21 20:34:10 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:34:12 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:34:14 [[31merror[39m]: undefined this.usersService.getUserById is not a function
+2024-10-21 20:34:38 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:34:40 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:34:42 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:35:10 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:35:12 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:35:22 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:36:11 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:36:13 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:36:16 [[31merror[39m]: undefined this.userDao.getById is not a function
+2024-10-21 20:37:03 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:37:05 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:37:07 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:37:53 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:37:55 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:37:57 [[31merror[39m]: undefined ObjectId is not defined
+2024-10-21 20:39:32 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:39:33 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:39:44 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:39:49 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:39:50 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:02 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:04 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:05 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:41:27 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:29 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:37 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:38 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:41:51 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:42:12 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:42:14 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:42:17 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:43:11 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:43:12 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:43:37 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:44:07 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:44:09 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:44:10 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:44:59 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:47:46 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:47:48 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:47:53 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:48:49 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 20:50:21 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:50:34 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:50:35 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:50:38 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:51:13 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:51:20 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:51:36 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:51:38 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:51:42 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:51:54 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:51:55 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:52:00 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:52:02 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:52:04 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:52:36 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:52:38 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:52:40 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getBy')
+2024-10-21 20:53:04 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:53:06 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:54:47 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:54:49 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:54:54 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getById')
+2024-10-21 20:55:12 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:55:15 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getById')
+2024-10-21 20:55:23 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:55:25 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:55:45 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:55:48 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'getById')
+2024-10-21 20:56:15 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:56:17 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:57:17 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:57:19 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:57:22 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:57:24 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:57:26 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716c6c33e10f04ffcc6e393" (type string)
+2024-10-21 20:58:12 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:58:14 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:59:23 [[32minfo[39m]: Listening on 8080
+2024-10-21 20:59:25 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:00:04 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:00:06 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:00:30 [[31merror[39m]: _id Cast to ObjectId failed for value "uid" (type string) at path "_id" for model "Users"
+2024-10-21 21:00:56 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:00:57 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:04:47 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:04:48 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:05:34 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:05:36 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:08:04 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:11:19 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:13:29 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:13:30 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:13:51 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:13:52 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:14:11 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:14:13 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:16:14 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:17:09 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:17:51 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:18:00 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:18:01 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:18:09 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:18:10 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:18:45 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716ea990e23ceb9d544c163" (type string)
+2024-10-21 21:18:52 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716ea990e23ceb9d544c163" (type string)
+2024-10-21 21:19:13 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:19:15 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:19:16 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6716ea990e23ceb9d544c163" (type string)
+2024-10-21 21:19:32 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:19:34 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:19:38 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:21:40 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:21:45 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:22:02 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:22:04 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:22:06 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:22:36 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:22:38 [[31merror[39m]: undefined Cannot read properties of null (reading 'owner')
+2024-10-21 21:25:18 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:25:21 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:27:29 [[32minfo[39m]: Listening on 8080
+2024-10-21 21:27:30 [[32minfo[39m]: Listening on 8080

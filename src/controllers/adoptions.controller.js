@@ -1,7 +1,7 @@
 // import { adoptionsService, petsService } from "../services/index.js"
 import { UserServices } from "../services/user.services.js";
-
 import { AdoptionServices } from "../services/adoption.services.js";
+import { PetServices } from "../services/pet.services.js";
 
 // const usersService = new UserServices();
 // const getAllAdoptions = async(req,res)=>{
@@ -40,7 +40,29 @@ export class AdoptionsController {
   constructor() {
     this.adoptionsService = new AdoptionServices();
     this.usersService = new UserServices();
+    this.petsService = new PetServices();
   }
+
+  remove = async (req, res, next) => {
+    try {
+      const aid = req.params.aid;
+      
+      const result = await this.adoptionsService.remove(aid);
+      res.send({ status: "success", payload: result });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  update = async (req, res, next) => {
+    try {
+      const aid = req.params.aid;
+      const result = await this.adoptionsService.update(aid, req.body);
+      res.send({ status: "success", payload: result });
+    } catch (error) {
+      next(error);
+    }
+  };
 
   getAllAdoptions = async (req, res, next) => {
     try {
@@ -64,16 +86,17 @@ export class AdoptionsController {
 
   createAdoption = async (req, res, next) => {
     try {
-      const { uid, pid } = req.params;
-      const user = await usersService.getUserById(uid);
+      const { uid, pid } = req.params;     
+      const user = await this.usersService.getById(uid);
       if (!user) return res.status(404).send({ status: "error", error: "user Not found" });
-      const pet = await petsService.getBy({ _id: pid });
+      const pet = await this.petsService.getById(pid);
       if (!pet) return res.status(404).send({ status: "error", error: "Pet not found" });
       if (pet.adopted) return res.status(400).send({ status: "error", error: "Pet is already adopted" });
+      
       user.pets.push(pet._id);
-      await usersService.update(user._id, { pets: user.pets });
-      await petsService.update(pet._id, { adopted: true, owner: user._id });
-      await adoptionsService.create({ owner: user._id, pet: pet._id });
+      await this.usersService.update(user._id, { pets: user.pets });
+      await this.petsService.update(pet._id, { adopted: true, owner: user._id });
+      await this.adoptionsService.create({ owner: user._id, pet: pet._id });
       res.send({ status: "success", message: "Pet adopted" });
     } catch (error) {
       next(error);
