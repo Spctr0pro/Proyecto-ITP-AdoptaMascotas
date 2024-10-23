@@ -2,31 +2,35 @@ import userModel from "./models/User.js";
 
 
 export default class Users {
-    
-    get = (params) =>{
+
+    get = (params) => {
         return userModel.find(params);
     }
 
-    getBy = (params) =>{
+    getById = (params) => {
         return userModel.findById(params)
     }
 
-    save = (doc) =>{
+    getByEmail = (email) => {
+        return userModel.findOne({ email });
+    };
+
+    save = (doc) => {
         return userModel.create(doc);
     }
-    saveMany = (docs) =>{
+    saveMany = (docs) => {
         return userModel.insertMany(docs)
     }
 
-    update = (id,doc) =>{
-        return userModel.findByIdAndUpdate(id,{$set:doc})
+    update = (id, doc) => {
+        return userModel.findByIdAndUpdate(id, { $set: doc }, { new: true })
     }
 
-    delete = (id) =>{
+    delete = (id) => {
         return userModel.findByIdAndDelete(id);
     }
 
-    deleteAll = () =>{
+    deleteAll = () => {
         return userModel.deleteMany({});
     }
 }

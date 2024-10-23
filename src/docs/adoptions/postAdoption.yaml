@@ -1,5 +1,5 @@
 paths:
-  /api/adoptions/uid/pid:
+  /api/adoptions/{uid}/{pid}:
     post:
       summary: Crear una adopción
       description: Create a adoption

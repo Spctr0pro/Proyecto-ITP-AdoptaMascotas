@@ -215,3 +215,76 @@
 2024-10-21 21:25:21 [[32minfo[39m]: Listening on 8080
 2024-10-21 21:27:29 [[32minfo[39m]: Listening on 8080
 2024-10-21 21:27:30 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:21:24 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:21:26 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:25:19 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:32:11 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:33:19 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:33:19 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:37:03 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:37:22 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:37:22 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:38:22 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:38:29 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:38:29 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:39:38 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:40:22 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:40:34 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:40:34 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:41:08 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:41:09 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:41:12 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:41:14 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:41:24 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:41:25 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:42:36 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:42:50 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:42:52 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:43:00 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:43:00 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:45:25 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:45:25 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:46:35 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:46:36 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:46:51 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:47:04 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:47:04 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:49:57 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:49:59 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:50:02 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:50:04 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:50:11 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 19:50:11 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:51:25 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:51:31 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 19:51:31 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:52:47 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:52:48 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:53:01 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:53:04 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 19:53:04 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:55:31 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 19:55:31 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:56:44 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:56:46 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:57:21 [[32minfo[39m]: Listening on 8080
+2024-10-23 19:57:44 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 19:57:44 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 19:59:23 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:00:46 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 20:01:48 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:02:44 [[31merror[39m]: undefined userModel is not defined
+2024-10-23 20:02:44 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 20:03:51 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:04:00 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 20:05:38 [[31merror[39m]: undefined this.userServices.getUserByEmail is not a function
+2024-10-23 20:06:46 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:06:47 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:07:44 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:11:32 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:11:44 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:11:46 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:11:59 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:12:00 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:13:22 [[32minfo[39m]: Listening on 8080
+2024-10-23 20:13:24 [[32minfo[39m]: Listening on 8080

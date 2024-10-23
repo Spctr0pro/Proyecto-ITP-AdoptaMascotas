@@ -29,10 +29,13 @@ export class PetsController {
   createPet = async (req, res, next) => {
     try {
       const { name, specie, birthDate } = req.body;
+      
       if (!name || !specie || !birthDate) return res.status(400).send({ status: "error", error: "Incomplete values" });
       const pet = PetDTO.getPetInputFrom({ name, specie, birthDate });
+      
+      
       const result = await this.petService.create(pet);
-      res.send({ status: "success", payload: result });
+      res.status(201).json({ status: "success", payload: result });
     } catch (error) {
       next(error);
     }
@@ -43,7 +46,7 @@ export class PetsController {
       const petUpdateBody = req.body;
       const petId = req.params.pid;
       const result = await this.petService.update(petId, petUpdateBody);
-      res.send({ status: "success", message: "pet updated" });
+      res.status(200).json({ status: "success", payload: result });
     } catch (error) {
       next(error);
     }
