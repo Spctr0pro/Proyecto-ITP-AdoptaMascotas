@@ -4,6 +4,8 @@ import userModel from "./models/User.js";
 export default class Users {
 
     get = (params) => {
+        console.log("Entro");
+        
         return userModel.find(params);
     }
 

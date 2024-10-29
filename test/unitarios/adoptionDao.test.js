@@ -1,13 +1,19 @@
+import Adoptions from "../../src/dao/Adoption.dao.js";
 import Users from "../../src/dao/Users.dao.js";
+import Pets from "../../src/dao/Pets.dao.js";
 import mongoose from "mongoose";
 import { expect } from "chai";
 
 mongoose.connect(`mongodb+srv://#USER#:#PASS#@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
 
 // Describir nuestro test
-describe("Test UserDao", () => {
+describe("Test adoptionDao", () => {
+    const adoptionDao = new Adoptions();
     const userDao = new Users();
+    const petDao = new Pets();
+    let adoptionTest;
     let userTest;
+    let petTest;
 
     // Método que se ejecuta antes de todos los tests
     before(() => {
@@ -20,13 +26,13 @@ describe("Test UserDao", () => {
     });
 
     // Test individual - Individual Test
-    it("Debe retornar todos los usuarios", async () => {
-        const users = await userDao.get();
-        expect(users).to.be.an("array");
-        expect(users).to.be.not.an("object");
+    it("Debe retornar todas las adopciones", async () => {
+        const adoptions = await adoptionDao.get();
+        expect(adoptions).to.be.an("array");
+        expect(adoptions).to.be.not.an("object");
     });
 
-    it("Debe crear y retornar un usuario", async () => {
+    it("Debe crear y retornar una adopción", async () => {
         const newUser = {
             first_name: "Pepe",
             last_name: "Perez",
@@ -38,51 +44,53 @@ describe("Test UserDao", () => {
 
         const user = await userDao.save(newUser);
         userTest = user;
-        // Afirmación
-        expect(user).to.be.an("object");
-        expect(user).to.have.property("_id");
-        expect(user.first_name).to.be.equal(newUser.first_name);
-        expect(user.last_name).to.be.equal(newUser.last_name);
-        expect(user.email).to.be.equal(newUser.email);
-        expect(user.password).to.be.equal(newUser.password);
-        expect(user.role).to.be.equal("user");
 
-        // Negación
-        expect(user).to.not.have.property("age");
-        expect(user).to.not.have.property("birthDate");
-        expect(user).to.not.be.null;
-        expect(user).to.not.be.an("array");
-    });
-
-    it("Debe retornar un usuario por su id", async () => {
-        const user = await userDao.getById(userTest._id);
-        expect(user).to.be.an("object");
-        expect(user).to.have.property("_id");
-        expect(user.first_name).to.be.equal(userTest.first_name);
-        expect(user.last_name).to.be.equal(userTest.last_name);
-        expect(user.email).to.be.equal(userTest.email);
-        expect(user.password).to.be.equal(userTest.password);
-    });
-
-    it("Debe actualizar un usuario", async () => {
-        const updateData = {
-            first_name: "Juan",
-            password: "coder123",
+        const newPet = {
+            name: "Copito",
+            specie: "Dog",
+            birthDate: new Date(),
+            adopted: false,
+            owner: null,
+            image: "dog.png",
         };
 
-        const user = await userDao.update(userTest._id, updateData);
-        expect(user).to.be.an("object");
-        expect(user).to.have.property("_id");
-        expect(user.first_name).to.be.equal("Juan");
-        expect(user.last_name).to.be.equal(userTest.last_name);
-        expect(user.email).to.be.equal(userTest.email);
-        expect(user.password).to.be.equal("coder123");
+        const pet = await petDao.save(newPet);
+        petTest = pet;
+
+        const newAdoption = {
+            owner: userTest._id,
+            pet: petTest._id,
+        };
+
+        const adoption = await adoptionDao.save(newAdoption);
+        adoptionTest = adoption;
+        // Afirmación
+        expect(adoption).to.be.an("object");
+        expect(adoption).to.have.property("_id");
+
+        // Negación
+        expect(adoption).to.not.have.property("age");
+        expect(adoption).to.not.have.property("birthDate");
+        expect(adoption).to.not.be.an("array");
     });
 
-    it("Debe eliminar el usuario", async () => {
+    it("Debe retornar una adopción por su id", async () => {
+        const adoption = await adoptionDao.getBy(adoptionTest._id);
+        console.log(adoption.owner._id);
+        console.log(userTest._id);
+        
+        expect(adoption).to.be.an("object");
+        expect(adoption).to.have.property("_id");
+        expect(adoption).to.have.property("owner");
+        expect(adoption).to.have.property("pet");
+    });
+
+    it("Debe eliminar la adopción", async () => {
+        await adoptionDao.delete(adoptionTest._id);
+        const adoption = await adoptionDao.getBy(adoptionTest._id);
+        expect(adoption).to.be.null;
+        await petDao.delete(petTest._id);
         await userDao.delete(userTest._id);
-        const user = await userDao.getById(userTest._id);
-        expect(user).to.be.null;
     })
 
     // Método que se ejecuta al finaliza cada test
@@ -93,6 +101,6 @@ describe("Test UserDao", () => {
     // Método que se ejecuta al finalizar todos los test
     after(async () => {
         console.log("Tests finalizados");
-        mongoose.disconnect();
+        //mongoose.disconnect();
     });
 });

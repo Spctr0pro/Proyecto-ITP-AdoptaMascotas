@@ -4,6 +4,7 @@ import { expect } from "chai";
 
 mongoose.connect(`mongodb+srv://#USER#:#PASS#@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
 
+
 // Describir nuestro test
 describe("Test UserDao", () => {
     const userDao = new Users();
@@ -22,6 +23,7 @@ describe("Test UserDao", () => {
     // Test individual - Individual Test
     it("Debe retornar todos los usuarios", async () => {
         const users = await userDao.get();
+        
         expect(users).to.be.an("array");
         expect(users).to.be.not.an("object");
     });
