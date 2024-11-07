@@ -1,50 +1,54 @@
-// import { expect } from "chai";
-// import supertest from "supertest";
+import { expect } from "chai";
+import supertest from "supertest";
 
-// const request = supertest("http://localhost:8080/api/pets");
+const request = supertest("http://localhost:8080/api/users");
 
-// describe("Test de integración Pets", () => {
-//     let testPet;
-//     it("[GET] /api/pets - Debe devolver un array de mascotas", async () => {
-//         const { status, body } = await request.get("/");
-//         expect(status).to.be.equal(200);
-//         expect(body.payload).to.be.an("array");
-//     });
+describe("Test de integración Users", () => {
+    let testUser;
+    it("[GET] /api/users - Debe devolver un array de usuarios", async () => {
+        const { status, body } = await request.get("/");
+        expect(status).to.be.equal(200);
+        expect(body.payload).to.be.an("array");
+    });
 
-//     it("[POST] /api/pets - Debe crear una nueva mascota", async () => {
-//         const newPet = {
-//             name: "Pet Test",
-//             specie: "Gato",
-//             birthDate: "10/10/2023",
-//             image: "image.png",
-//         };
-//         const { status, body } = await request.post("/").send(newPet);
-//         testPet = body.payload;
-//         expect(status).to.be.equal(201);
-//         expect(body.payload).to.be.an("object");
-//         expect(body.payload.name).to.be.equal("Pet Test");
-//         expect(body.payload.specie).to.be.equal("Gato");
-//         expect(body.payload.adopted).to.be.equal(false);
-//     });
+    it("[POST] /api/users - Debe crear un nuevo usuario", async () => {
+        const newUser = {
+            first_name: "Pepe",
+            last_name: "Perez",
+            email: "pp101@gmail.com",
+            password: "coder123",
+            age: 30,
+            birthDate: new Date(),
+        };
 
-//     it("[PUT] /api/pets/:pid - Debe actualizar una mascota", async () => {
-//         const newPet = {
-//             specie: "Perro",
-//         };
+        const { status, body } = await request.post("/").send(newUser);
+        testUser = body.payload;
+        expect(status).to.be.equal(201);
+        expect(body.payload).to.be.an("object");
+        expect(body.payload.first_name).to.be.equal("Pepe");
+        expect(body.payload.last_name).to.be.equal("Perez");
+        expect(body.payload.email).to.be.equal("pp101@gmail.com");
+    });
 
-//         const { status, body } = await request.put(`/${testPet._id}`).send(newPet);
+    it("[PUT] /api/users/:uid - Debe actualizar un usuario", async () => {
+        const updateData = {
+            first_name: "Juan",
+            password: "coder123",
+        };
 
-//         expect(status).to.be.equal(200);
-//         expect(body.payload).to.be.an("object");
-//         expect(body.payload.name).to.be.equal("Pet Test");
-//         expect(body.payload.specie).to.be.equal("Perro");
-//         expect(body.payload.adopted).to.be.equal(false);
-//     });
+        const { status, body } = await request.put(`/${testUser._id}`).send(updateData);
+        
+        expect(status).to.be.equal(201);
+        expect(body.payload).to.be.an("object");
+        expect(body.payload).to.have.property("_id");
+        expect(body.payload.first_name).to.be.equal("Juan");
+        expect(body.payload.password).to.be.equal("coder123");
+    });
 
-//     it("[DELETE] /api/pets/:pid - Debe eliminar una mascota", async () => {
-//         const { status, body } = await request.delete(`/${testPet._id}`);
+    it("[DELETE] /api/users/:uid - Debe eliminar un usuario", async () => {
+        const { status, body } = await request.delete(`/${testUser._id}`);
 
-//         expect(status).to.be.equal(200);
-//         expect(body.message).to.be.equal("pet deleted");
-//     });
-// });
+        expect(status).to.be.equal(200);
+        expect(body.message).to.be.equal("User deleted");
+    });
+});

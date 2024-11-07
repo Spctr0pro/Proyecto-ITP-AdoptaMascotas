@@ -11,7 +11,7 @@ export class PetsController {
   getAllPets = async (req, res, next) => {
     try {
       const pets = await this.petService.getAll();
-      res.send({ status: "success", payload: pets });
+      res.status(200).json({ status: "success", payload: pets });
     } catch (error) {
       next(error);
     }
@@ -20,7 +20,7 @@ export class PetsController {
   getById = async (req, res, next) => {
     try {
       const pets = await this.petService.getById(req.params.pid);
-      res.send({ status: "success", payload: pets });
+      res.status(200).json({ status: "success", payload: pets });
     } catch (error) {
       next(error);
     }
@@ -46,7 +46,7 @@ export class PetsController {
       const petUpdateBody = req.body;
       const petId = req.params.pid;
       const result = await this.petService.update(petId, petUpdateBody);
-      res.status(200).json({ status: "success", payload: result });
+      res.status(201).json({ status: "success", payload: result });
     } catch (error) {
       next(error);
     }
@@ -55,8 +55,9 @@ export class PetsController {
   deletePet = async (req, res, next) => {
     try {
       const petId = req.params.pid;
+      
       const result = await this.petService.remove(petId);
-      res.send({ status: "success", message: "pet deleted" });
+      res.status(200).json({ status: "success", message: "pet deleted" });
     } catch (error) {
       next(error);
     }
@@ -65,7 +66,7 @@ export class PetsController {
   deleteAllPet = async (req, res, next) => {
     try {     
       const result = await this.petService.removeAll();
-      res.send({ status: "success", message: "pets deleted" });
+      res.status(200).json({ status: "success", message: "pets deleted" });
     } catch (error) {
       next(error);
     }
@@ -84,7 +85,7 @@ export class PetsController {
       });
       
       const result = await petsService.create(pet);
-      res.send({ status: "success", payload: result });
+      res.status(201).json({ status: "success", payload: result });
     } catch (error) {
       next(error);
     }

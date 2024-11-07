@@ -34,7 +34,7 @@ describe("Test de integración Pets", () => {
 
         const { status, body } = await request.put(`/${testPet._id}`).send(newPet);
 
-        expect(status).to.be.equal(200);
+        expect(status).to.be.equal(201);
         expect(body.payload).to.be.an("object");
         expect(body.payload.name).to.be.equal("Pet Test");
         expect(body.payload.specie).to.be.equal("Perro");

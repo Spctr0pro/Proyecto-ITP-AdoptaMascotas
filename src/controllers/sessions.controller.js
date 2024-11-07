@@ -52,7 +52,7 @@ export class SessionsController {
     try {
       const cookie = req.cookies["coderCookie"];
       const user = jwt.verify(cookie, "tokenSecretJWT");
-      if (user) return res.send({ status: "success", payload: user });
+      if (user) return res.status(200).json({ status: "success", payload: user });
     } catch (error) {
       next(error);
     }

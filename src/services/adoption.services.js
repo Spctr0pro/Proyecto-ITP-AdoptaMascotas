@@ -30,7 +30,7 @@ export class AdoptionServices {
 
   async remove(id) {
     const adoption = await this.adoptionDao.getBy(id);
-    const user = await this.userDao.getBy(adoption.owner._id);
+    const user = await this.userDao.getById(adoption.owner._id);
     const pet = await this.petDao.getBy(adoption.pet._id);
     await this.adoptionDao.delete(id);
     

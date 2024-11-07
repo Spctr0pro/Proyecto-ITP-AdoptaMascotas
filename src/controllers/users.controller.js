@@ -8,21 +8,20 @@ export class UserControllers {
   }
 
   create = async (req, res) => {
-    const users = await this.userServices.create(req.body);
-
-    res.status(201).json({ status: "ok", users });
+    const user = await this.userServices.create(req.body);
+    res.status(201).json({ status: "ok", payload: user });
   };
 
   createUserMock = async (req, res) => {
     const users = await this.userServices.createMocks();
-
+    
     res.status(201).json({ status: "ok", users });
   };
 
   getAllUsers = async (req, res, next) => {
     try {
       const users = await this.userServices.getAll();
-      res.send({ status: "success", payload: users });
+      res.status(200).json({ status: "success", payload: users });
     } catch (error) {
       next(error);
     }
@@ -34,7 +33,7 @@ export class UserControllers {
 
       const user = await this.userServices.getById(userId);
 
-      res.send({ status: "success", payload: user });
+      res.status(200).json({ status: "success", payload: user });
     } catch (error) {
       next(error);
     }
@@ -48,17 +47,17 @@ export class UserControllers {
       return res.status(404).send({ status: "error", error: "User not found" });
 
     const result = await this.userServices.update(userId, updateBody);
-    res.send({ status: "success", message: "User updated" });
+    res.status(201).json({ status: "success", payload: result });
   };
 
   deleteUser = async (req, res) => {
     const userId = req.params.uid;
     const result = await this.userServices.remove(userId);
-    res.send({ status: "success", message: "User deleted" });
+    res.status(200).json({ status: "success", message: "User deleted" });
   };
 
   deleteAllUser = async (req, res) => {
     const result = await this.userServices.removeAll();
-    res.send({ status: "success", message: "Users deleted" });
+    res.status(200).json({ status: "success", message: "Users deleted" });
   };
 }

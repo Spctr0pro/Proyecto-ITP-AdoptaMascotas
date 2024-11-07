@@ -4,7 +4,7 @@ import Pets from "../../src/dao/Pets.dao.js";
 import mongoose from "mongoose";
 import { expect } from "chai";
 
-mongoose.connect(`mongodb+srv://#USER#:#PASS#@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
+mongoose.connect(`mongodb+srv://ivantorop:gO3HOAs3EmMmHj1V@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
 
 // Describir nuestro test
 describe("Test adoptionDao", () => {
@@ -76,8 +76,6 @@ describe("Test adoptionDao", () => {
 
     it("Debe retornar una adopción por su id", async () => {
         const adoption = await adoptionDao.getBy(adoptionTest._id);
-        console.log(adoption.owner._id);
-        console.log(userTest._id);
         
         expect(adoption).to.be.an("object");
         expect(adoption).to.have.property("_id");
