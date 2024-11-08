@@ -2,9 +2,6 @@ import Users from "../../src/dao/Users.dao.js";
 import mongoose from "mongoose";
 import { expect } from "chai";
 
-mongoose.connect(`mongodb+srv://ivantorop:gO3HOAs3EmMmHj1V@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
-
-
 // Describir nuestro test
 describe("Test UserDao", () => {
     const userDao = new Users();

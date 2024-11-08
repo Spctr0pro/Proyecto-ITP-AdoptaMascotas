@@ -1,10 +1,13 @@
 import Adoptions from "../../src/dao/Adoption.dao.js";
 import Users from "../../src/dao/Users.dao.js";
 import Pets from "../../src/dao/Pets.dao.js";
-import mongoose from "mongoose";
+import paths from "../../src/utils/paths.js"
+import { config as configDotenv } from "../../src/config/dotenv.config.js";
+import { connectDB } from "../../src/config/mongoose.config.js";
 import { expect } from "chai";
 
-mongoose.connect(`mongodb+srv://ivantorop:gO3HOAs3EmMmHj1V@cluster0.qbjax5p.mongodb.net/proyectoBackend3`);
+configDotenv(paths);
+connectDB();
 
 // Describir nuestro test
 describe("Test adoptionDao", () => {
@@ -99,6 +102,5 @@ describe("Test adoptionDao", () => {
     // Método que se ejecuta al finalizar todos los test
     after(async () => {
         console.log("Tests finalizados");
-        //mongoose.disconnect();
     });
 });
