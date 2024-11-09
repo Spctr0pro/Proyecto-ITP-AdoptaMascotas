@@ -82,3 +82,4 @@
 2024-11-06 21:37:07 [[31merror[39m]: undefined Cannot read properties of null (reading 'pets')
 2024-11-07 22:06:36 [[31merror[39m]: undefined Operation `users.find()` buffering timed out after 10000ms
 2024-11-07 22:10:41 [[31merror[39m]: undefined Operation `users.find()` buffering timed out after 10000ms
+2024-11-08 20:18:06 [[31merror[39m]: undefined Operation `adoptions.find()` buffering timed out after 10000ms
