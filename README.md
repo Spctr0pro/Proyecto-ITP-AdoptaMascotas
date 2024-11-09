@@ -37,7 +37,9 @@ Esta aplicación facilita el proceso de adopción de mascotas, conectando a adop
 https://hub.docker.com/r/itoro397/app-adoption
 
 ## Para descargar la imagen de Docker debes ejecutar el siguiente comando:
+```bash
 docker pull itoro397/app-adoption
+```
 
 ## Contacto
 Para más información, contacta a ivantoro.p@gmail.com.
